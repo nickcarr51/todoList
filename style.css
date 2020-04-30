@@ -1,0 +1,154 @@
+.headerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputDiv {
+    margin-bottom: 20px;
+}
+
+.input {
+    height: 20px;
+    width: 200px;
+}
+
+.buttonDiv {
+    margin-bottom: 20px;
+}
+
+.submitButton {
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    width: 100px;
+    height: 30px;
+}
+
+.submitButton:hover {
+    background-color: white;
+    color: black;
+}
+
+.bodyContainer {
+    height: 100vw;
+    display: flex;
+    box-sizing: border-box;
+
+}
+
+.nothingMessage {
+    margin: 30px;
+    color: red;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.todoContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vw;
+    width: 50%;
+    border: 1px solid black;
+    align-items: center; 
+    overflow: auto;
+    /* display: inline-block; */
+}
+
+.completeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vw;
+    width: 50%;
+    border: 1px solid black;
+}
+
+.todoItem {
+    display: flex;
+    border: 1px solid black;
+    width: 500px;
+    padding: 20px;
+    height: 20px;
+    margin: 20px;
+    justify-content: space-between;
+    background-color: beige;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+.bodyHeader {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    text-align: center;
+}
+
+.highPriority {
+    display: flex;
+    border: 1px solid black;
+    width: 500px;
+    padding: 20px;
+    height: 20px;
+    margin: 20px;
+    justify-content: space-between;
+    background-color: red;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+.completeItemDiv {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 500px;
+    padding: 20px;
+    height: 20px;
+    margin: 20px;
+    justify-content: space-between;
+    background-color: lightgreen;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+.completeButton {
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    width: 120px;
+    height: 30px;
+}
+
+.completeButton:hover {
+    background-color: white;
+    color: black;
+}
+
+.resetButtonContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.resetButton {
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    width: 150px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.resetButton:hover {
+    background-color: white;
+    color: black;
+}
