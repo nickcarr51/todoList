@@ -70,7 +70,7 @@ const createTodoContainer = () => {
 
 const todoItems = () => {
     const todoDiv = document.createElement('div');
-
+    todoDiv.classList.add('todoDiv');
     const todoHeader = document.createElement('h2');
     todoHeader.classList.add('bodyHeader');
     todoHeader.innerHTML = 'Things To Do:';
@@ -123,11 +123,11 @@ const createCompleteButton = () => {
     completeButton.addEventListener('click', ev => {
         let itemToMove = completeButton.parentNode.querySelector('span').innerHTML;
         state.complete.push(itemToMove);
-        let newToDo = state.todo.splice(state.todo.indexOf(itemToMove), 1);
+        state.todo.splice(state.todo.indexOf(itemToMove), 1);
         // console.log(newToDo);
-        // state.todo = state.todo.slice(0, state.todo.indexOf())
+        // state.todo = state.todo.splice(0, state.todo.indexOf())
         // console.log(state.todo);
-        // state.todo = state.todo.splice(state.todo.indexOf(itemToMove));
+        // state.todo = state.todo.splice(state.todo.indexOf(itemToMove), 1);
         console.log(state);
         render();
     })
